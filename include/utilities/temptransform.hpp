@@ -1,4 +1,5 @@
 #pragma once
+
 #include <modules/graphics_ext.hpp>
 
 namespace love
@@ -33,6 +34,7 @@ namespace love
 
         ~TempTransform()
         {
+            printf("[TempTransform::~TempTransform] Popping tempTransform\n");
             this->graphics->PopTransform();
         }
 
